@@ -2,14 +2,14 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 1;
+  padding: 0;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #222;
+  color: #f1f1f1;
 }
 
 .container {
@@ -17,8 +17,6 @@ body {
   margin: auto;
   padding: 0 2rem;
 }
-
-
 
 /* Header styles */
 header {
@@ -67,7 +65,7 @@ nav a:hover {
 
 /* Main content styles */
 main {
-  padding-top: calc(4.5rem + 5rem); 
+  padding-top: calc(4.5rem + 5rem);
 }
 .main-title {
   text-align: center;
@@ -80,7 +78,7 @@ main {
   align-items: center;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: #333;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
@@ -88,6 +86,7 @@ main {
 .game-info img {
   max-width: 45%;
   border-radius: 6px;
+  margin-right: 1rem;
 }
 
 .game-info h2, .game-info p {
@@ -97,13 +96,14 @@ main {
 .game-features {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: #333;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
 
 h2, h3 {
   margin-bottom: 1rem;
+  color: #f8b739;
 }
 
 /* Footer styles */
@@ -135,9 +135,9 @@ footer input[type="email"] {
 footer button {
   position: absolute;
   right: 0;
-  top: 0;
+  top:0;
   padding: 0.5rem;
-  background-color: #007bff;
+  background-color: #f8b739;
   color: #f1f1f1;
   border: none;
   border-radius: 0.25rem;
@@ -147,7 +147,7 @@ footer button {
   }
   
   footer button:hover {
-  background-color: #0056b3;
+  background-color: #e49b27;
   }
   
   .first-section {
@@ -163,14 +163,9 @@ footer button {
   margin-bottom: 2rem;
   }
   
-  /* Review Section */
-  .reviews-section {
-  margin-bottom: 2rem;
-  }
-  
   .review {
   padding: 1rem;
-  background-color: #fff;
+  background-color: #333;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
@@ -191,7 +186,7 @@ footer button {
   .review p {
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  color: #333;
+  color: #f1f1f1;
   }
   
   .review .review-rating {
@@ -210,7 +205,7 @@ footer button {
   /* Review Form Section */
   .review-form-section {
   padding: 2rem;
-  background-color: #f5f5f5;
+  background-color: #222;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -237,8 +232,8 @@ footer button {
   border: 1px solid #ddd;
   border-radius: 0.5rem;
   font-size: 1.25rem;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #333;
+  color: #f1f1f1;
   }
   
   .review-form-section button {
@@ -256,7 +251,5 @@ footer button {
   .review-form-section button:hover {
   background-color: #e49b27;
   }
-  
-  
   
   

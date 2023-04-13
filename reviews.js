@@ -38,11 +38,11 @@ const reviewsContainer = document.getElementById("reviews-container");
 function generateReviewCard(review) {
   const { name, date, rating, text } = review;
 
-  // Create review card element
+ 
   const reviewCard = document.createElement("div");
   reviewCard.classList.add("review");
 
-  // Add name, date, and rating to the card
+  
   const nameEl = document.createElement("h3");
   nameEl.textContent = name;
   const dateEl = document.createElement("p");
@@ -50,7 +50,6 @@ function generateReviewCard(review) {
   const ratingEl = document.createElement("p");
   ratingEl.innerHTML = "Rating: " + "★ ".repeat(rating) + "☆ ".repeat(5 - rating);
 
-  // Add text to the card
   const textEl = document.createElement("p");
   textEl.textContent = text;
 
@@ -63,33 +62,32 @@ function generateReviewCard(review) {
   return reviewCard;
 }
 
-// Function to display all reviews
+
 function displayReviews() {
-  // Clear existing reviews
+  
   reviewsContainer.innerHTML = "";
 
-  // Loop through each review and generate a card for it
   reviewData.forEach((review) => {
     const reviewCard = generateReviewCard(review);
     reviewsContainer.appendChild(reviewCard);
   });
 }
 
-// Call the displayReviews function to initially display all reviews
+
 displayReviews();
 
-// Handle form submission
+
 const addReviewForm = document.getElementById("add-review-form");
 addReviewForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Get the values from the form inputs
+ 
   const name = document.getElementById("name-input").value;
   const date = document.getElementById("date-input").value;
   const rating = parseInt(document.getElementById("rating-input").value);
   const text = document.getElementById("text-input").value;
 
-  // Create a new review object
+  
   const newReview = {
     name,
     date,
@@ -97,12 +95,12 @@ addReviewForm.addEventListener("submit", (e) => {
     text,
   };
 
-  // Add the new review to the reviewData array
+  
   reviewData.push(newReview);
 
-  // Clear the form inputs
+  
   addReviewForm.reset();
 
-  // Display all reviews (including the new one)
+  
   displayReviews();
 });
