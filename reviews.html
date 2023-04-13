@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="reviews.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Game Title</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="info.html">About the Game</a>
+            <a href="reviews.html">Reviews</a> 
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+
+    <main class="container page-content">
+        <h2>Reviews</h2>
+
+        <div id="reviews-container"></div>
+
+        <h3>Add Your Review</h3>
+
+        <form id="add-review-form">
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" name="name" required>
+
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input" name="date" required>
+
+            <label for="rating-input">Rating (1-5):</label>
+            <input type="number" id="rating-input" name="rating" min="1" max="5" required>
+
+            <label for="text-input">Review:</label>
+            <textarea id="text-input" name="text" required></textarea>
+
+            <button type="submit">Create</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
